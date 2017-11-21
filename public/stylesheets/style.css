@@ -1,0 +1,279 @@
+/* === APPLY TO MULTIPLE === */
+
+body {
+  /*box-sizing: border-box;*/
+  background-color: rgb(190, 190, 190);
+}
+
+#contact-container {
+  text-align: center;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+}
+
+.sh {
+  text-align: center;
+  font-size: 3vw;
+  display: block;
+  box-sizing: content-box;
+}
+
+
+
+/* === NAVIGATION BAR === */
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbarItems {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.navbarItem {
+  box-sizing: border-box;
+  padding: 7px;
+  /*margin-top:7px;*/
+  font-size: 3vh;
+  /*max-height: auto;*/
+  width: 25%;
+  height: 100%;
+  background-color: rgb(59, 59, 59);
+  color: rgb(190, 190, 190);
+  border-color: rgb(190, 190, 190);
+  /*max-height: 100%;*/
+  text-align: center;
+  font-weight: 500;
+}
+
+.navbarItem:hover {
+  background-color: rgb(190, 190, 190);
+  color: rgb(59, 59, 59);
+}
+
+
+
+/* === HEADER CONTENT === */
+
+#header-container {
+  text-align: center;
+  padding: 20px;
+  margin: 0px 0px 0px 0px;
+}
+
+
+#header-text {
+  box-sizing: content-box;
+  color: rgb(190, 190, 190);
+  width: 55%;
+  text-align: center;
+}
+
+#headshot {
+  box-sizing: content-box;
+  float: right;
+  margin: 20px;
+  max-width: 40%;
+  max-height: auto;
+  border: 20px outset rgb(190, 190, 190);
+}
+
+#headerButtons {
+  /*max-width: 100%;
+  min-width: 100%;*/
+  /*display: flex;
+  justify-content: space-around;*/
+}
+
+#title {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+#sh1 {
+  font-weight: bold;
+  animation: colorchange1 infinite;
+  -webkit-animation: colorchange1 infinite;
+}
+
+#sh2 {
+  color: gray;
+}
+
+
+
+/* === HEADER BUTTONS === */
+
+.headerItem {
+  padding:40px;
+  /*margin-top:7px;*/
+  font-size: 3vh;
+  /*max-height: auto;*/
+  width: 20%;
+  background-color: rgb(59, 59, 59);
+  color: rgb(190, 190, 190);
+  border-color: rgb(190, 190, 190);
+  max-height: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.headerItem:hover {
+  background-color: rgb(190, 190, 190);
+  color: rgb(59, 59, 59);
+}
+
+
+
+/* === INTRO CONTENT === */
+
+
+
+/* === SKILLS CONTENT === */
+
+#skills-table {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(190, 190, 190);
+  color: rgb(59, 59, 59);
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 14px 28px 14px 28px;
+}
+
+.skills-item {
+  padding: 5px;
+  font-size: 3vh;
+  margin: 10px;
+}
+
+.skills-heading {
+  font-size: 5vh;
+  text-align: center;
+  background-color: rgb(59, 59, 59);
+  color: rgb(190, 190, 190);
+  margin: 10px;
+  border-radius: 13px 26px 13px 26px;
+}
+
+
+
+/* === PROJECTS CONTENT === */
+
+.item {
+  padding-left: 7%;
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+}
+
+#tea-cap {
+  color: gray;
+}
+
+#carousel-example-generic {
+  /*height:*/
+}
+
+
+
+/* === CONTACT CONTENT === */
+
+.fa
+{
+  zoom: 200%;
+  margin: 20px;
+  -webkit-animation: color_change 10s infinite;
+	-moz-animation: color_change 10s infinite;
+	-ms-animation: color_change 10s infinite;
+	-o-animation: color_change 10s infinite;
+  animation: color_change 10s infinite;
+}
+
+.contact-label {
+  color: gray;
+}
+
+
+
+/* === CONTAINER SIZES AND BACKGROUNDS === */
+
+#header-container, #intro-container, #skills-container, #projects-container, #contact-container {
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+#header-container, #skills-container, #contact-container {
+  background: rgb(59, 59, 59);
+  /*background-color: linear-gradient(rgb(190, 190, 190), rgb(59, 59, 59));
+  background: -webkit-linear-gradient(rgb(190, 190, 190), rgb(59, 59, 59));
+  background: -o-linear-gradient(rgb(190, 190, 190), rgb(59, 59, 59));
+  background: -moz-linear-gradient(rgb(190, 190, 190), rgb(59, 59, 59));*/
+  color: rgb(190, 190, 190);
+}
+
+#intro-container, #projects-container {
+  background: rgb(190, 190, 190);
+  /*background-color: linear-gradient(rgb(59, 59, 59), rgb(190, 190, 190));
+  background: -webkit-linear-gradient(rgb(59, 59, 59), rgb(190, 190, 190));
+  background: -o-linear-gradient(rgb(59, 59, 59), rgb(190, 190, 190));
+  background: -moz-linear-gradient(rgb(59, 59, 59), rgb(190, 190, 190));*/
+  color: rgb(59, 59, 59);
+}
+
+
+
+/* === COLOUR CHANGE ANIMATION === */
+@-webkit-keyframes color_change {
+	0% { color: red; }
+  17% { color: orange; }
+  38% { color: yellow; }
+  50% { color: green; }
+  67% { color: blue; }
+  88% { color: indigo; }
+	100% { color: violet; }
+}
+@-moz-keyframes color_change {
+  0% { color: red; }
+  17% { color: orange; }
+  38% { color: yellow; }
+  50% { color: green; }
+  67% { color: blue; }
+  88% { color: indigo; }
+	100% { color: violet; }
+}
+@-ms-keyframes color_change {
+  0% { background-color: red; }
+  17% { background-color: orange; }
+  38% { background-color: yellow; }
+  50% { background-color: green; }
+  67% { background-color: blue; }
+  88% { background-color: indigo; }
+	100% { background-color: violet; }
+}
+@-o-keyframes color_change {
+  0% { color: red; }
+  17% { color: orange; }
+  38% { color: yellow; }
+  50% { color: green; }
+  67% { color: blue; }
+  88% { color: indigo; }
+	100% { color: violet; }
+}
+@keyframes color_change {
+  0% { color: red; }
+  17% { color: orange; }
+  38% { color: yellow; }
+  50% { color: green; }
+  67% { color: blue; }
+  88% { color: indigo; }
+	100% { color: violet; }
+}
